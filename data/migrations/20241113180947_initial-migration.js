@@ -44,7 +44,7 @@ exports.up = async function (knex) {
         .unsigned()
         .notNullable()
         .references("resource_id")
-        .inTable("resource")
+        .inTable("resources")
         .onDelete("RESTRICT")
         .onUpdate("RESTRICT");
     });
